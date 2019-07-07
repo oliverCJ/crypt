@@ -1,4 +1,4 @@
-package crypy_test
+package example_test
 
 import (
 	"fmt"
@@ -90,9 +90,9 @@ func ExampleNewCrypt6() {
 
 
 // 生成64位码表方法实例，该方法主要为方便生成自定义码表，生成后的码表需妥善保存
-//func ExampleGetRandomMapString() {
-//	str := encrypt.GetRandomMapString()
-//	fmt.Println(str)
-//	// Output:
-//	//
-//}
+func ExampleGetRandomMapString() {
+	str := encrypt.GetRandomMapString()
+	fmt.Println(str)
+	// Output:
+	//
+}

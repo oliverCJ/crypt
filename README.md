@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/oliverCJ/crypt/branch/master/graph/badge.svg)](https://codecov.io/gh/oliverCJ/crypt)
+---
+
 ## crypt字符加解密
 > 标准的base64加密主要是为了二进制字符在网络传输中的可靠性和兼容性，并不是严格意义的加密。
 > 在我目前遇到场景中，要求有一种加密效率高，而且加密稳定，安全性较高
@@ -35,7 +38,7 @@ go get github.com/oliverCJ/crypt
 ```
 
 ### 使用
-> 参见example_test文件中的实例
+> 参见example文件中的实例
 
 ### 加密稳定性测试
 - 加密方式：4位切分加密
