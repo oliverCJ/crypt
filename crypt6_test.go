@@ -37,6 +37,11 @@ func TestCrypt6_DeCryptString(t *testing.T) {
 	}
 }
 
+func TestGetRandomMapString(t *testing.T) {
+	str := GetRandomMapString()
+	require.Len(t, str, 64)
+}
+
 // 基准测试
 func BenchmarkCrypt6_EnCryptToString(b *testing.B) {
 	str := "最是那一低头的温柔，像一朵水莲花不胜凉风的娇羞，道一声珍重，道一声真正，那一声珍重里的蜜田的忧愁。"
