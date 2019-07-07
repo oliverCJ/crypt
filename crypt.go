@@ -1,6 +1,6 @@
 // 基于base64编码方式衍生的可逆加解密方式
 // 4位加密
-package encrypt
+package crypy
 
 import (
 	"strconv"

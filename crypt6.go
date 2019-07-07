@@ -1,4 +1,4 @@
-package encrypt
+package crypy
 
 import (
 	"math/rand"

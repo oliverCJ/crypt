@@ -1,9 +1,9 @@
-package encrypt_test
+package crypy_test
 
 import (
 	"fmt"
 
-	"github.com/oliverCJ/crypt"
+	encrypt "github.com/oliverCJ/crypt"
 )
 
 func ExampleCrypt_EnCryptToString() {
