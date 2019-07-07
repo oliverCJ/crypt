@@ -31,7 +31,7 @@
 
 ### 安装
 ```
-go get github.com/oliverCJ/encrypt
+go get github.com/oliverCJ/crypt
 ```
 
 ### 使用

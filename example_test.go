@@ -6,6 +6,7 @@ import (
 	encrypt "github.com/oliverCJ/crypt"
 )
 
+// 使用默认码表，4位加密
 func ExampleCrypt_EnCryptToString() {
 	src := "Hello, 世界"
 	enc := encrypt.DefaultEncrypt.EnCryptToString([]byte(src))
@@ -21,6 +22,7 @@ func ExampleCrypt_EnCryptToString() {
 	// Hello, 世界
 }
 
+// 使用默认码表，6位加密
 func ExampleCrypt6_EnCryptToString() {
 	src := "Hello, 世界"
 	enc := encrypt.DefaultEncrypt6.EnCryptToString([]byte(src))
@@ -36,6 +38,9 @@ func ExampleCrypt6_EnCryptToString() {
 	// Hello, 世界
 }
 
+/**
+ * 自定义码表和密码4位加密实例
+ */
 func ExampleNewCrypt() {
 	var (
 		selfCryptDefaultStd = "qazwsxedcrfvtgby"
@@ -58,6 +63,9 @@ func ExampleNewCrypt() {
 	// hello world
 }
 
+/**
+ * 自定义码表和密码6位加密实例
+ */
 func ExampleNewCrypt6() {
 	var (
 		selfCryptLStd = "!au^%AfgSy)-(OJ.Lz1ciox]d|v:nVEB[~wq-'h,9N6Ft=b8M{UTPH@lrZ}WD3mX"
@@ -80,9 +88,11 @@ func ExampleNewCrypt6() {
 	// hello world
 }
 
-func ExampleGetRandomMapString() {
-	str := encrypt.GetRandomMapString()
-	fmt.Println(str)
-	// Output:
-	//
-}
+
+// 生成64位码表方法实例，该方法主要为方便生成自定义码表，生成后的码表需妥善保存
+//func ExampleGetRandomMapString() {
+//	str := encrypt.GetRandomMapString()
+//	fmt.Println(str)
+//	// Output:
+//	//
+//}
