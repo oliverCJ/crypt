@@ -119,7 +119,7 @@ func (c *Crypt6) DeCrypt(dst, src []byte) (n int, err error) {
 }
 
 func GetRandomMapString() string {
-	baseText := "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+-./,:;<=>?@[]^_-`{}|~"
+	baseText := "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+-./,:;<=>?@[]^_`{}|~"
 	baseTextBytes := []byte(baseText)
 
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
